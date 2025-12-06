@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+    <title>online learning platform</title>
+</head>
+<body>
+ <header>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <h2><a href="#" class="logo-title">Learner Corner</a></h2>
+        </div>
+
+          <ul class="nav-list-link">
+            <button id="close-btn">
+                <img src="images/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="close-btn">
+            </button>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Curriculum</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+            <li><a href="signup.html" class="nav-link">Sign Up</a></li>
+            <li><a href="signin.html" class="nav-link">Sign In</a></li>
+
+         </ul> 
+         <button id="menu-btn">
+                <img src="images/menu.svg" alt="close-btn">
+        </button>
+
+
+    </nav>
+ </header>
+ 
+ <main>
+    <section class="signup-section">
+        <div class="form-container">
+            <p class="title">Learners corner.<p>
+            <h1>Sign up for an account</h1>
+            <p class="description">
+                Create your account so can start enjoying<br>
+                our online lessons and quizzes.
+            </p>
+
+            <form action="#">
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="Enter your username" required class="form-input">
+
+                 <label for="Full name">Full name</label>
+                <input type="text" name="Full name" placeholder="Enter your Full name" required class="form-input">
+
+                 <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter your email" required class="form-input">
+
+                 <label for="password">Password</label>
+                <input type="password" id="Password" name="password" placeholder="Enter your password" required class="form-input">
+                
+                <div class="show-password">
+                    <input type="checkbox" id="show password" onclick="myfunction()">
+                    <label for="password">Show Password</label>
+                </div>
+
+                <h2>Are you a student or Teacher</h2>
+                <p class="prof">Please select your role to create your account</p>
+
+                <div class="radio-container">
+                    <input type="radio" name="proffessional" id="teacher" required>
+                    <label for="proffessional">Teacher</label>
+                </div>
+                <div class="radio-container">
+                    <input type="radio" name="proffessional" id="student" required>
+                    <label for="proffessional">Student</label>
+                </div>
+                
+                <a href="#" class="sign-btn">
+                    <button type="submit">SIGN UP</button>
+                </a>
+                
+              
+
+            </form>
+                <div class="submit-section">
+                    <p class="link-dir">Or login using</p>
+                <div class="icon-container">
+                        <a href="#"><i class="fa-brands fa-google "></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>       
+                </div>
+            </div>
+
+        
+
+        </div>
+        <div class="side-container">
+            <div class="side-container-contents">
+                <h2>Already signed up?</h2>
+                <p>Login to your account so can continue enjoying <br>
+                    enjoying our online lessons and quizzes</p>
+                    <a href="signin.html" class="side-link">
+                        <button>SIGN IN</button>
+                    </a>
+            </div>
+
+        </div>
+    </section>
+
+ </main>
+
+
+ <script src="script.js"></script>
+</body>
+</html>

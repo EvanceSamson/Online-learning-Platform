@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+:root{
+    /*colors*/
+    --primary-color:rgb(59, 157, 196);
+    --secondary-color:rgb(189, 23, 189);
+    --reserve-color:rgba(143, 140, 140, 0.829);
+    --white-color:white;
+
+    /*font sizes*/
+    --font-size-s: 1rem;
+    --font-size-m: 1.3rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+
+    /*border*/
+    --border-radius-s: 0.6rem;
+    --border-radius-m: 0.3rem;
+    --border-radius-circle: 50%;
+}
+
+.notes-section .notes-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.notes-section h2{
+    align-items: center;
+    background: rgb(27, 211, 27);
+    padding: 5px 15px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.notes-section .notes-content .notes {
+    padding: 25px 15px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.notes-section .notes-content .notes .notes-image img{
+    width: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    padding: 5px;
+}
+.notes-section .notes-content .notes .buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.notes-section .notes-content .notes .buttons button{
+    background: rgb(236, 31, 202);
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.3s ease;
+    padding: 5px;
+}
+.notes-section .notes-content .notes .buttons button:hover{
+    background: rgba(236, 31, 202, 0.801);
+}
+.notes-section .search-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px;
+}
+.notes-section .search-btn input{
+    outline: none;
+    padding: 4px 8px;
+    border: 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+.notes-section .search-btn button{
+    background: var(--primary-color);
+    outline: none;
+    padding: 4px 8px;
+    border: 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
